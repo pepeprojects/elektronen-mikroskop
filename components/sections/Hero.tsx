@@ -4,7 +4,7 @@ import BeamsOverlay from '@/components/ui/BeamsOverlay'
 export default function Hero() {
   return (
     <section
-      className="relative min-h-[60vh] flex flex-col justify-center items-center text-white"
+      className="relative min-h-[80vh] flex flex-col justify-center items-center text-white"
       style={{
         backgroundImage: 'url(/images/SEM_image_of_textile_1%201.png)',
         backgroundSize: 'cover',
