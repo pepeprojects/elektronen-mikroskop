@@ -1,0 +1,58 @@
+{
+  "products": [
+    {
+      "id": "probenbeschichtung",
+      "title": "Probenbeschichtung",
+      "description": "Um nicht leitfähige Proben oder solche mit niedriger Ordnungszahl mit bestmöglicher Auflösung abbilden zu können, kommt man um gute Beschichtungstechnik nicht herum.",
+      "icon": "SparklesIcon"
+    },
+    {
+      "id": "probenreinigung",
+      "title": "Probenreinigung",
+      "description": "Organische Oberflächenkontaminationen auf elektronenmikroskopischen Proben entfernt man am effektivsten und ohne die Probenoberfläche signifikant zu verändern, mit einem Plasma-Reinigungsgerät.",
+      "icon": "BeakerIcon"
+    },
+    {
+      "id": "schwingungsdaempfung",
+      "title": "Schwingungsdämpfung",
+      "description": "Je höher die gewünschte Auflösung, desto stärker wirken sich externe Schwingungen auf die Bildgebung Ihres Elektronenmikroskops aus. Mit unserem kompakten, passiven Schwingungsdämpfungstisch sorgen Sie für optimale Aufstellbedingungen für Ihr Elektronenmikroskop.",
+      "icon": "SignalIcon"
+    },
+    {
+      "id": "praeperationswerkzeuge",
+      "title": "Präparationswerkzeuge",
+      "description": "REM-Proben sollten immer mit dafür geeigneten Werkzeugen gegriffen werden. Wir bieten die typischen Pinzetten und Halteplatten für ein sicheres und kontaminationsarmes Greifen Ihrer Proben.",
+      "icon": "WrenchScrewdriverIcon"
+    },
+    {
+      "id": "probentraeger",
+      "title": "Probenträger",
+      "description": "Hier finden Sie REM-Probenträger, die Ihnen eine gute Befestigung und Positionierung für die allermeisten Probenarten und Probenformen bieten.",
+      "icon": "CubeIcon"
+    },
+    {
+      "id": "klebstoffe",
+      "title": "Klebstoffe",
+      "description": "Klebstoffe zum Fixieren von Proben im Elektronenmikroskop sollten elektrisch leitfähig sein. Hier finden Sie eine Auswahl der gängigsten.",
+      "icon": "BoltIcon"
+    },
+    {
+      "id": "probenaufbewahrung",
+      "title": "Probenaufbewahrung",
+      "description": "Bei der Lagerung von Elektronenmikroskop-Proben ist darauf zu achten, dass dies staubfrei erfolgt und im Falle des Falles, Ihre Schätze nicht beschädigt werden.",
+      "icon": "ArchiveBoxIcon"
+    },
+    {
+      "id": "justieren-testen-kalibrieren",
+      "title": "Justieren, Testen, Kalibrieren",
+      "description": "Wie jedes andere Messinstrument sollte auch ein Elektronenmikroskop von Zeit zu Zeit geprüft und kalibriert werden. Die Test- und Kalibrierproben für Elektronenmikroskope finden Sie hier.",
+      "icon": "AdjustmentsHorizontalIcon"
+    },
+    {
+      "id": "starterkits",
+      "title": "Starterkits",
+      "description": "Unsere Starterkits bieten eine umfangreiche Ausstattung mit den gängigsten Werkzeugen, Probenträger, Klebstoffe und Aufbewahrungsboxen.",
+      "icon": "GiftIcon"
+    }
+  ]
+}
