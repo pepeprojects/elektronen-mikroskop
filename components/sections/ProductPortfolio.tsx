@@ -11,10 +11,10 @@ export default function ProductPortfolio() {
             </h3>
             <p className="text-lg text-gray-700 mb-4">
               Eine gute Probenpräparation ist der Schlüssel für gute REM-Aufnahmen und Analysen.
-              Wir beliefern Sie mit den passenden Geräten, Werkzeugen und Verbrauchsmaterialien.
+              Wir beliefern Sie mit den hochwertigen Geräten, Werkzeugen und Verbrauchsmaterialien.
             </p>
             <p className="text-lg text-gray-700">
-              Unsere Produktkataloge werden gerade überarbeitet. Bitte fordern Sie aktuelle Infos
+              Bitte fordern Sie unseren aktuellen Produktkatalog
               unter 07071 / 9346-60 oder sales@elektronen-mikroskop.com an.
             </p>
           </div>
