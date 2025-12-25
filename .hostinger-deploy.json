@@ -1,0 +1,7 @@
+{
+  "buildCommand": "npm run hostinger:deploy",
+  "nodeVersion": "20",
+  "outputDirectory": "out",
+  "installCommand": "npm install",
+  "notes": "This Next.js application requires Node.js 20+ and builds to static files in the 'out' directory"
+}
