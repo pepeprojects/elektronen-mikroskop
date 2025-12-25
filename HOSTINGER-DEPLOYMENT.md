@@ -6,35 +6,37 @@ This guide provides step-by-step instructions for deploying your Next.js applica
 
 ---
 
-## 🚀 Quick Start - Option B (Server-Side Build)
+## 🚀 Quick Start - Node.js Web App Deployment ✅
 
-**Your setup is configured for automatic server-side builds.**
+**CONFIRMED WORKING**: Hostinger supports Next.js via Node.js Web App deployment.
 
-### Prerequisites
-✅ Build script added to [package.json](package.json#L11)
-✅ Deployment config created: [.hostinger-deploy.json](.hostinger-deploy.json)
-✅ GitHub repository ready: `https://github.com/pepeprojects/elektronen-mikroskop.git`
+### Deployment Method: Hostinger Node.js Web App
+Hostinger has a **Node.js Web App** deployment feature that:
+- ✅ Supports Node.js builds
+- ✅ Runs `npm run build` automatically
+- ✅ Deploys static exports from the `out/` directory
+- ✅ Works with Next.js static export configuration
 
-### Before Deploying
-**IMPORTANT**: Contact Hostinger support to confirm:
-- Does your hosting plan support Node.js 20+?
-- Can you run custom build commands during Git deployment?
-
-### If Node.js is Supported
+### Quick Deployment Steps
 1. Log in to Hostinger hPanel
-2. Navigate to **Git** section
-3. Click **Create New Repository**
+2. Navigate to **Node.js Web App** (NOT the basic Git section)
+3. Create new Node.js application
 4. Configure:
-   - Repository: `https://github.com/pepeprojects/elektronen-mikroskop.git`
-   - Branch: `main`
-   - Install path: Leave empty (deploys to `/public_html`)
-   - Build command: `npm run hostinger:deploy` (if available)
-5. Click **Deploy**
-6. Monitor deployment logs
-7. Visit your domain to verify
+   - **Repository**: `https://github.com/pepeprojects/elektronen-mikroskop.git`
+   - **Branch**: `main`
+   - **Build Command**: `npm run build` (standard Next.js)
+   - **Output Directory**: `out/` (Next.js static export output)
+   - **Node.js Version**: 20 or latest available
+5. Deploy and monitor build logs
+6. Visit your domain to verify
 
-### If Node.js is NOT Supported
-Use **Option A** (Manual Build) - see below for instructions.
+### Build Process
+Hostinger automatically runs:
+1. `npm install` - Installs dependencies
+2. `npm run build` - Builds Next.js static site to `out/` directory
+3. Serves files from `out/` directory
+
+**No custom build script needed** - standard Next.js deployment works perfectly!
 
 ---
 
@@ -310,31 +312,75 @@ If you encounter issues:
 
 ---
 
-## 🎯 Recommended Approach
+## 🎯 Recommended Approach - Node.js Web App ✅ CONFIRMED
 
-**For elektronen-mikroskop.com**, using **Option B (Server-Side Build)**:
+**For elektronen-mikroskop.com**, using **Hostinger Node.js Web App deployment**:
 
-### Setup Complete ✅
-- ✅ Build script added to package.json: `npm run hostinger:deploy`
-- ✅ Deployment config created: `.hostinger-deploy.json`
-- ✅ Node.js version specified: v20
+### Deployment Successful ✅
+- ✅ Node.js Web App feature confirmed working
+- ✅ Standard Next.js build process (`npm run build`)
+- ✅ Static export from `out/` directory
+- ✅ No custom build scripts required
 
-### Next Steps for Deployment:
+### Continuous Deployment Workflow
+Once configured, your deployment workflow is:
 
-1. **Contact Hostinger Support First** (CRITICAL):
-   - Ask: "Does my hosting plan support Node.js 20+ for Git deployments?"
-   - Ask: "Can I run custom build commands during Git deployment?"
-   - If YES → Continue with Option B below
-   - If NO → Use Option A (Manual Build) instead
+1. **Make changes** to your code locally
+2. **Commit changes** to git
+3. **Push to GitHub**: `git push origin main`
+4. **Hostinger auto-deploys**:
+   - Pulls latest code from GitHub
+   - Runs `npm install`
+   - Runs `npm run build`
+   - Serves files from `out/` directory
+5. **Site is live** within minutes
 
-2. **If Hostinger Supports Node.js** - Follow Option B instructions
-3. **If Not Supported** - Follow Option A instructions
+### First-Time Setup (Already Complete)
+- ✅ GitHub repository connected
+- ✅ Node.js Web App configured
+- ✅ Build command set to `npm run build`
+- ✅ Output directory set to `out/`
+- ✅ Deployment successful
 
-### Deployment Workflow:
-1. Push changes to `main` branch on GitHub
-2. Hostinger automatically pulls latest code
-3. Runs `npm run hostinger:deploy` (installs dependencies + builds + copies files)
-4. Site is live with latest changes
+### Post-Deployment Verification Checklist
+
+Visit **elektronen-mikroskop.com** and verify:
+
+**Visual Elements:**
+- [ ] Homepage loads correctly
+- [ ] Logo (LOGO.svg) displays in header
+- [ ] Beams overlay animation works (Three.js/WebGL)
+- [ ] Header transparency over Hero section
+- [ ] Header transitions to solid white on scroll
+- [ ] Source Sans 3 font loads correctly
+- [ ] All product category icons display (Heroicons)
+- [ ] Contact box displays with phone/email links
+
+**Functionality:**
+- [ ] Mobile menu hamburger works
+- [ ] All internal links work
+- [ ] Impressum modal opens and closes
+- [ ] Click-to-call phone link works
+- [ ] Mailto email link works
+- [ ] Smooth scroll behavior
+
+**Assets:**
+- [ ] All favicons load (check browser tab)
+- [ ] Hero background image loads (SEM_image_of_textile)
+- [ ] No 404 errors in browser console
+- [ ] All CSS/JS bundles load from `_next/static/`
+
+**Mobile/Responsive:**
+- [ ] Test on mobile device
+- [ ] Responsive layout works
+- [ ] Touch interactions work
+- [ ] Animations perform smoothly
+
+**SEO & Metadata:**
+- [ ] Page title displays correctly in browser tab
+- [ ] Meta description present (view source)
+- [ ] Open Graph tags present
+- [ ] Favicons display on all platforms
 
 ---
 
